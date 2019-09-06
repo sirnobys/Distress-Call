@@ -1,6 +1,9 @@
+<html>
+
 <?php
+if (isset($_POST['submit'])){
 require_once "vendor/autoload.php";
- 
+
 $basic  = new \Nexmo\Client\Credentials\Basic('52643da5', '06uGQhKUKANdFhgX');
 $client = new \Nexmo\Client($basic);
 
@@ -9,4 +12,7 @@ $message = $client->message()->send([
     'from' => 'Nexmo',
     'text' => 'Hello from Nexmo'
 ]);
+echo "message sent successfully";
+}
 ?>
+</html>
