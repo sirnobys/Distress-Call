@@ -1,0 +1,22 @@
+{
+    "name": "PWA from scratch",
+    "short_name": "PWA from scratch",
+    "lang": "en-US",
+    "start_url": "/index.html",
+    "display": "fullscreen",
+    "theme_color": "blue",
+    "icons": [
+      {
+        "src": "1.jpeg",
+        "sizes": "64x64"
+      },
+      {
+        "src": "2.jpeg",
+        "sizes": "128X128"
+      },
+      {
+        "src": "ucc.gif",
+        "sizes": "512x512"
+      }
+    ]
+  }
