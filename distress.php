@@ -40,14 +40,18 @@
     </div>
     <h1>History</h1>
     <div id="history"> -->
+    <div class="hero flex-center">
+        <p class="">jonah</p>
     <form method="post" action="index.php">
-      <input class="panic" value="submit" type="submit"/>
+        hello
+      <h1><input class="panic" value="submit" type="submit"/></h1>
     </form>
+  </div>
     <?php
     function send_sms(){
     require_once "vendor/autoload.php";
 
-    $basic  = new \Nexmo\Client\Credentials\Basic('53305afd', 'ulKKbW8hxT7wZ1ry');
+    $basic  = new \Nexmo\Client\Credentials\Basic('', '');
     $client = new \Nexmo\Client($basic);
 
     $message = $client->message()->send([

@@ -8,7 +8,7 @@ $basic  = new \Nexmo\Client\Credentials\Basic('', '');
 $client = new \Nexmo\Client($basic);
 
 $message = $client->message()->send([
-    'to' => '233245391083',
+    'to' => '233246971090',
     'from' => 'Nexmo',
     'text' => 'Hello from Nexmo'
 ]);
