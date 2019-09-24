@@ -1,10 +1,10 @@
 
 <?php
 
-function send_sms(){
 require_once "vendor/autoload.php";
 
-$basic  = new \Nexmo\Client\Credentials\Basic('', '');
+function send_sms(){
+    $basic  = new \Nexmo\Client\Credentials\Basic('cfbde54a', 'st6ssDYhJZwhydlp');
 $client = new \Nexmo\Client($basic);
 
 $message = $client->message()->send([
@@ -12,7 +12,10 @@ $message = $client->message()->send([
     'from' => 'Nexmo',
     'text' => 'Hello from Nexmo'
 ]);
+
+echo "message sent";
 }
 
 send_sms();
+
 ?>
